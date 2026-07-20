@@ -1,0 +1,1 @@
+body{font-family:Arial;background:#eef;margin:0}.box{max-width:700px;margin:30px auto;background:#fff;padding:20px;border-radius:8px}input,button{padding:10px;margin:5px}table{width:100%;border-collapse:collapse}td,th{border:1px solid #ccc;padding:8px}button{cursor:pointer}
