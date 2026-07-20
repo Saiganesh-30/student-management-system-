@@ -1,6 +1,22 @@
-let students=JSON.parse(localStorage.getItem('students')||'[]');
-function save(){localStorage.setItem('students',JSON.stringify(students));}
-function addStudent(){let n=name.value.trim(),r=roll.value.trim();if(!n||!r)return alert('Fill all fields');students.push({n,r});save();name.value='';roll.value='';render();}
-function del(i){students.splice(i,1);save();render();}
-function render(){let q=(search.value||'').toLowerCase();list.innerHTML='';students.forEach((s,i)=>{if(s.n.toLowerCase().includes(q)||s.r.toLowerCase().includes(q)){list.innerHTML+=`<tr><td>${s.n}</td><td>${s.r}</td><td><button onclick='del(${i})'>Delete</button></td></tr>`}})}
-render();
+# Student Management System
+
+## About
+This is a Student Management System built using HTML, CSS, and JavaScript.
+
+## Features
+- Add Student
+- Search Student
+- Delete Student
+- Local Storage
+
+## Technologies Used
+- HTML
+- CSS
+- JavaScript
+
+## How to Run
+1. Download or clone the repository.
+2. Open `index.html` in your browser.
+
+## Author
+Sai Ganesh
